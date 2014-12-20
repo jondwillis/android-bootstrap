@@ -5,10 +5,13 @@ buildscript {
         mavenCentral()
     }
     dependencies {
+        classpath 'com.github.nwillc:vplugin:1.+'
         classpath 'com.android.tools.build:gradle:1.0.0'
     }
 }
+
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.nwillc.vplugin'
 
 repositories {
     maven { url 'https://github.com/donnfelker/mvn-repo/raw/master/' }
